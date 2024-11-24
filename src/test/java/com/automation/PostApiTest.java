@@ -17,7 +17,6 @@ public class PostApiTest {
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = Config.BASE_URL;
-        // Create a user first since we need a valid user to create posts
         createTestUser();
     }
 
