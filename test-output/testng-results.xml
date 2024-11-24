@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-25T00:06:59 PKT" name="APITestSuite" finished-at="2024-11-25T00:07:13 PKT" duration-ms="14194">
+    <groups>
+    </groups>
+    <test started-at="2024-11-25T00:06:59 PKT" name="API Tests" finished-at="2024-11-25T00:07:13 PKT" duration-ms="14194">
+      <class name="com.automation.PostApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.PostApiTest@2f7c2f4f]" started-at="2024-11-25T00:07:08 PKT" name="setup" finished-at="2024-11-25T00:07:09 PKT" duration-ms="799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCreatePost()[pri:1, instance:com.automation.PostApiTest@2f7c2f4f]" started-at="2024-11-25T00:07:09 PKT" name="testCreatePost" finished-at="2024-11-25T00:07:10 PKT" duration-ms="797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreatePost -->
+        <test-method signature="testGetPost()[pri:2, instance:com.automation.PostApiTest@2f7c2f4f]" started-at="2024-11-25T00:07:10 PKT" name="testGetPost" finished-at="2024-11-25T00:07:11 PKT" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPost -->
+        <test-method signature="testUpdatePost()[pri:3, instance:com.automation.PostApiTest@2f7c2f4f]" started-at="2024-11-25T00:07:11 PKT" name="testUpdatePost" finished-at="2024-11-25T00:07:11 PKT" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatePost -->
+        <test-method signature="testDeletePost()[pri:4, instance:com.automation.PostApiTest@2f7c2f4f]" started-at="2024-11-25T00:07:11 PKT" name="testDeletePost" finished-at="2024-11-25T00:07:13 PKT" duration-ms="1369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeletePost -->
+      </class> <!-- com.automation.PostApiTest -->
+      <class name="com.automation.ApiTestUser">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.ApiTestUser@460d0a57]" started-at="2024-11-25T00:06:59 PKT" name="setup" finished-at="2024-11-25T00:07:00 PKT" duration-ms="973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPostUser()[pri:1, instance:com.automation.ApiTestUser@460d0a57]" started-at="2024-11-25T00:07:00 PKT" name="testPostUser" finished-at="2024-11-25T00:07:05 PKT" duration-ms="5260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testGetUser()[pri:2, instance:com.automation.ApiTestUser@460d0a57]" started-at="2024-11-25T00:07:05 PKT" name="testGetUser" finished-at="2024-11-25T00:07:06 PKT" duration-ms="971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUser -->
+        <test-method signature="testUpdateUser()[pri:3, instance:com.automation.ApiTestUser@460d0a57]" started-at="2024-11-25T00:07:06 PKT" name="testUpdateUser" finished-at="2024-11-25T00:07:07 PKT" duration-ms="861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+        <test-method signature="testDeleteUser()[pri:4, instance:com.automation.ApiTestUser@460d0a57]" started-at="2024-11-25T00:07:07 PKT" name="testDeleteUser" finished-at="2024-11-25T00:07:08 PKT" duration-ms="1558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+      </class> <!-- com.automation.ApiTestUser -->
+    </test> <!-- API Tests -->
+  </suite> <!-- APITestSuite -->
+</testng-results>
