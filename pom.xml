@@ -34,6 +34,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.10.2</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- JSON Schema Validator -->
@@ -43,6 +44,36 @@
             <version>5.3.2</version>
             <scope>test</scope>
         </dependency>
-    </dependencies><build><plugins><plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><configuration><source>8</source><target>8</target></configuration></plugin></plugins></build>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.lazerycode.jmeter</groupId>
+                <artifactId>jmeter-maven-plugin</artifactId>
+                <version>3.7.0</version>
+                <executions>
+                    <execution>
+                        <id>jmeter-tests</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jmeter</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <testFilesDirectory>${project.basedir}/src/test/jmeter</testFilesDirectory>
+                    <resultsDirectory>${project.build.directory}/jmeter/results</resultsDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
